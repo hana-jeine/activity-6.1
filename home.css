@@ -1,0 +1,124 @@
+.navbar{
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+#artelier{
+    width: 50px;
+    margin-right: 10px;
+}
+
+.navbar-brand{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #f8cf40;
+    font-size: 24px;
+    transition: 0.3s color;
+}
+
+h5{
+    color: #f8cf40;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar-brand:hover{
+    color: #846e00;
+}
+
+.login-button{
+    background-color: #34774a;
+    color: white;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.login-button:hover{
+    background-color: #3b8554;
+}
+
+.navbar-toggler{
+    margin-left: 20px;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link{
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active:hover{
+    color: black;
+}
+
+@media(mid-width: 991px){
+    
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #009970;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover::before, .nav-link.active::before{
+    width: 100%;
+    visibility: visible;
+}
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+}
+
+
+#box-main{
+    width: 100%;
+    min-height: 400px;
+    align-items: center;
+}
+
+#box-main .box{
+    width: 30%;
+    min-height: 30%;
+    float: left;
+    margin-top: 10%;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #000;
+}
+
+.hero-section{
+    height: 100%;
+    background: url(images/thebridge.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#footer{
+    min-height: 10%;
+    background-color: #ffffff;
+    text-align: center;
+    color:#000;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}

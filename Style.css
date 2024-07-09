@@ -1,0 +1,256 @@
+.navbar{
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+#artelier{
+    width: 50px;
+    margin-right: 10px;
+}
+
+.navbar-brand{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #f8cf40;
+    font-size: 24px;
+    transition: 0.3s color;
+}
+
+h5{
+    color: #f8cf40;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar-brand:hover{
+    color: #846e00;
+}
+
+.login-button{
+    background-color: #34774a;
+    color: white;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.login-button:hover{
+    background-color: #3b8554;
+}
+
+.navbar-toggler{
+    margin-left: 20px;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link{
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active:hover{
+    color: black;
+}
+
+@media(mid-width: 991px){
+    
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #009970;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover::before, .nav-link.active::before{
+    width: 100%;
+    visibility: visible;
+}
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+#box-main{
+    width: 100%;
+    min-height: 400px;
+}
+
+#box-main .box{
+    width: 30%;
+    min-height: 30%;
+    float: left;
+    margin-top: 10%;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #000;
+}
+
+#box-main .box:nth-child(2){
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#box-main .box2{
+    width: 30%;
+    min-height: 30%;
+    float: left;
+    margin-top: 5%;
+    margin-bottom: 50px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #000;
+}
+
+#box-main .box2:nth-child(2){
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.hero-section{
+    height: 100%;
+    background: url(images/thebridge.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#footer{
+    min-height: 10%;
+    background-color: #ffffff;
+    text-align: center;
+    color:#000;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#box-main img{
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --clr: #0ab3ff;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1c2630;
+}
+
+form{
+    background: #29313c;
+    padding: 60px 80px 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+form h2{
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    letter-spacing: 0.1em;
+    margin-bottom: 50px;
+}
+
+.inputbox{
+    position: relative;
+    width: 300px;
+    margin-bottom: 40px;
+}
+
+.inputbox input{
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #999;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.inputbox label{
+    position: absolute;
+    left: 0;
+    padding: 10px 0;
+    pointer-events: none;
+    color: #999;
+    text-transform: uppercase;
+}
+
+.inputbox label span{
+    position: relative;
+    display: inline-flex;
+    letter-spacing: 0.05em;
+    transition: 0.2s ease-in-out;
+}
+
+.inputbox input:focus ~ label span, .inputbox input:valid ~ label span {
+    color: var(--clr);
+    letter-spacing: 0.15em;
+    transform: translateY(-25px);
+}
+
+.inputbox input:focus, .inputbox input:valid{
+    border-bottom: 2px solid var(--clr);
+}
+
+.inputbox input[type="submit"]{
+    background: var(--clr);
+    border: none;
+    padding: 15px;
+    border-radius: 50px;
+    color: #1c2630;
+    font-size: 1.15em;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.inputbox input[type="submit"]:hover{
+    letter-spacing: 0.35em;
+}
+
+form p{
+    color: white;
+}
+
+form p a{
+    color: var(--clr);
+    font-weight: 500;
+    text-decoration: none;
+}
